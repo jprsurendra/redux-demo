@@ -36,10 +36,10 @@ Once connect imported on your file then wrap your component with the connect fun
 3. depending on the type of dispatched-<b>action</b>, the reducer will update the <b>state</b> and pass the <b>new state</b> to the store.<br/>
 4. the <b>store</b> will then pass the <b>new state</b> received from the <b>reducer</b> to the <b>component</b>.<br/>
    
-<b>Actions</b>  
-*  are payloads of information that send data from your application to your <b>store</b>. <br/> 
-*  areplain JavaScript objects.
-*  must have a <b>type</b> property that indicates the <i>type of action</i> being performed.<br/>  
+<i>Actions</i>  
+  &nbsp;&nbsp;&nbsp;&nbsp;... are payloads of information that send data from your application to your <b>store</b>. <br/> 
+  &nbsp;&nbsp;&nbsp;&nbsp;... are plain JavaScript objects. <br/> 
+  &nbsp;&nbsp;&nbsp;&nbsp;... must have a <b>type</b> property that indicates the <i>type of action</i> being performed.<br/>  
 Types should typically be defined as string constants and written in all caps.<br/> 
 	
 	Below is an example of an action that represents adding a reminder:
