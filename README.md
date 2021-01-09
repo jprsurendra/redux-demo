@@ -29,13 +29,19 @@ Once connect imported on your file then wrap your component with the connect fun
 	... ... ...
 	}
 	export default connect()(MyClassComponent);
-
+### Interacting with the redux store  
 <b>Redux flow</b>  
 1. A react <b>component</b> dispatching an <b>action</b><br/>  
 2. The dispatched-<b>action</b> gets to the <b>store</b>, which then passes it to the <b>reducer</b><br/>
 3. depending on the type of dispatched-<b>action</b>, the reducer will update the <b>state</b> and pass the <b>new state</b> to the store.<br/>
 4. the <b>store</b> will then pass the <b>new state</b> received from the <b>reducer</b> to the <b>component</b>.<br/>
  
+
+### Interacting with the redux store  
+
+
+
+
 
 
 
