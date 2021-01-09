@@ -36,6 +36,24 @@ Once connect imported on your file then wrap your component with the connect fun
 3. depending on the type of dispatched-<b>action</b>, the reducer will update the <b>state</b> and pass the <b>new state</b> to the store.<br/>
 4. the <b>store</b> will then pass the <b>new state</b> received from the <b>reducer</b> to the <b>component</b>.<br/>
  
+*  <b>Actions</b> are payloads of information that send data from your application to your <b>store</b>. <br/> 
+*  <b>Actions</b> are plain JavaScript objects.
+*  <b>Actions</b> must have a <b>type</b> property that indicates the <i>type of action</i> being performed.<br/>  
+Types should typically be defined as string constants and written in all caps.<br/> 
+	
+	Below is an example of an action that represents adding a reminder:
+	const ADD_REMINDER = ‘ADD_REMINDER’
+	{ type: ADD_REMINDER, text: "Work on redux blog!"}
+	
+	We then have action creators, which are functions that create actions. An example can be seen below.
+	File: actions.js
+	const addReminder = (text) => ({
+										type: "ADD_REMINDER",
+										payload: text
+									})
+									
+	Reducers on the other hand specify how the application’s state changes in response to actions sent to the store.
+
 
 ### Interacting with the redux store  
 
