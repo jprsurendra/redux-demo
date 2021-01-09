@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 /.idea
-
+.gitignore
 .eslintcache
 .pnp.js
 
