@@ -40,7 +40,6 @@ Once connect imported on your file then wrap your component with the connect fun
   &nbsp;&nbsp;&nbsp;&nbsp;... are payloads of information that send data from your application to your <b>store</b>. <br/> 
   &nbsp;&nbsp;&nbsp;&nbsp;... are plain JavaScript objects. <br/> 
   &nbsp;&nbsp;&nbsp;&nbsp;... must have a <b>type</b> property that indicates the <i>type of action</i> being performed.<br/>  
-This action is going to receive some 'text' and pass that information as a payload to the reducer. <br/>
 Types should typically be defined as string constants and written in all caps. Below is an example of an action that represents adding a reminder.<br/>
 
  	const ADD_REMINDER = ‘ADD_REMINDER’
@@ -54,6 +53,7 @@ Then, We have action creators, which are functions that create actions. An examp
                                         payload: text
                                     })
 									
+This action is going to receive some 'text' and pass that information as a payload to the reducer. <br/><br/>
 On the other hand, <b>Reducers</b> specify how the application’s state changes in response to actions sent to the store.
 
 
