@@ -9,7 +9,7 @@ Another popular Redux middleware is Redux-Saga.  I think that if they are not we
 <li>Connect individual react component to the redux store</li>
 <li>Interact with the redux store</li>
 <li>Retrieve information from the store</li>
-</ul>
+</ul>  
 
 ###Connect individual react component to the redux store
 First we must install the react-redux npm package if you don’t have it installed in your react app:  
