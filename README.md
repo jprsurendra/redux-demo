@@ -46,7 +46,7 @@ Types should typically be defined as string constants and written in all caps. B
 	{ type: ADD_REMINDER, text: "Work on redux blog!"}
 	
 Then, We have action creators, which are functions that create actions. An example can be seen below. <br/>   
-	<i>File: actions.js</i><br/>
+	<i>File: actions.jsx</i><br/>
 
 	const addReminder = (text) => ({
                                         type: "ADD_REMINDER",
@@ -54,7 +54,27 @@ Then, We have action creators, which are functions that create actions. An examp
                                     })
 									
 This action is going to receive some <i>text</i> and pass that information as a payload to the reducer. <br/><br/>
-On the other hand, <b>Reducers</b> specify how the application’s state changes in response to actions sent to the store.
+On the other hand, <b>Reducers</b> specify how the application’s state changes in response to actions sent to the store.<br/>
+the reducer defines the structure of our application’s state and also contains the logic responsible for updating the state according to the type of action it receives.<br/>
+	<i>File: reducers.jsx</i><br/>
+
+    const initialState = {
+        reminders: []
+    };
+    
+    const remindersReducer = (state=initialState, action) => {
+        switch (action.type) {
+            case 'ADD_REMINDER': {
+                return {
+                          ...state,
+                          reminders: [...state.reminders, action.payload] 
+                        };
+            default:
+                return state;
+        }
+    };
+    
+
 
 
 ### Interacting with the redux store  
