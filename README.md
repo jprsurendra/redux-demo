@@ -4,7 +4,7 @@
 Redux-Thunk is a popular choice for Redux middleware that also allows you to support asynchronous (एसिंगक्रनस) behaviour.<br /><br />
 Another popular Redux middleware is Redux-Saga.  I think that if they are not well managed, then sagas can create complicated-looking code compared to the Logic you create with redux-logic. This can impact development speed and code maintainability.</p>
 
-## How to interact with the Redux store in a React app
+## How to interact with the Redux store in a React app  
 <ul>
 <li>Connect individual react component to the redux store</li>
 <li>Interact with the redux store</li>
