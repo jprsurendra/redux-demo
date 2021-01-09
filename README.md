@@ -55,7 +55,7 @@ Then, We have action creators, which are functions that create actions. An examp
 									
 This action is going to receive some <i>text</i> and pass that information as a payload to the reducer. <br/><br/>
 On the other hand, <b>Reducers</b> specify how the application’s state changes in response to actions sent to the store.<br/>
-the reducer defines the structure of our application’s state and also contains the logic responsible for updating the state according to the type of action it receives.<br/>
+The reducer defines the structure of our application’s state and also contains the logic responsible for updating the state according to the type of action it receives.<br/>
 	<i>File: reducers.jsx</i><br/>
 
     const initialState = {
@@ -74,7 +74,8 @@ the reducer defines the structure of our application’s state and also contains
         }
     };
     
-
+In our reducer.js file above we declared a constant and set it equal to an object. Inside the object we have a key of reminders that points to an empty array. This is going to be the structure of our application state and thus the structure of our redux store as well.<br/>
+Next we have our reducer function called reminderReducer that will receive two very important arguments. The first is the state, which we will set equal to the constant initialState. The second argument is the action that it’s receiving from the store. Depending on the type of action the reducer receives it will change the state according to the code in the switch statement.<br/>
 
 
 ### Interacting with the redux store  
