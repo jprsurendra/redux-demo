@@ -45,12 +45,13 @@ Types should typically be defined as string constants and written in all caps. B
  	const ADD_REMINDER = ‘ADD_REMINDER’
 	{ type: ADD_REMINDER, text: "Work on redux blog!"}
 	
-We then have action creators, which are functions that create actions. An example can be seen below.  
-	<i>File: actions.js</i>
+We then have action creators, which are functions that create actions. An example can be seen below. <br/>   
+	<i>File: actions.js</i><br/>
+
 	const addReminder = (text) => ({
-                type: "ADD_REMINDER",
-                payload: text
-            })
+                                        type: "ADD_REMINDER",
+                                        payload: text
+                                    })
 									
 	Reducers on the other hand specify how the application’s state changes in response to actions sent to the store.
 
