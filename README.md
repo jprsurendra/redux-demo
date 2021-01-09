@@ -78,7 +78,19 @@ In our <b>reducer</b> (reducer.js file) above we declared a constant and set it 
 Next we have our reducer function called reminderReducer that will receive two very important arguments. The first is the state, which we will set equal to the constant initialState. The second argument is the action that it’s receiving from the store. Depending on the type of action the reducer receives it will change the state according to the code in the switch statement.<br/>
 
 
-### Interacting with the redux store  
+#### JavaScript spread operator: 
+    function sum(x, y, z) {
+      return x + y + z;
+    }
+    
+    const numbers = [1, 2, 3];
+    
+    console.log(sum(...numbers));
+    // expected output: 6
+    
+    console.log(sum.apply(null, numbers));
+    // expected output: 6
+
 
 
 
