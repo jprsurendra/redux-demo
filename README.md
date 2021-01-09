@@ -1,7 +1,45 @@
-# Getting Started with Create React App
+# An Introduction to Redux-Logic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Redux is a popular predictable state container for JavaScript applications.<br /><br />
+Redux-Thunk is a popular choice for Redux middleware that also allows you to support asynchronous (एसिंगक्रनस) behaviour.<br /><br />
+Another popular Redux middleware is Redux-Saga.  I think that if they are not well managed, then sagas can create complicated-looking code compared to the Logic you create with redux-logic. This can impact development speed and code maintainability.</p>
 
+## How to interact with the Redux store in a React app
+<ul>
+<li>Connect individual react component to the redux store</li>
+<li>Interact with the redux store</li>
+<li>Retrieve information from the store</li>
+</ul>
+
+###Connect individual react component to the redux store
+First we must install the react-redux npm package if you don’t have it installed in your react app:  
+`npm install react-redux`
+
+Import a function called connect from this package: (Please check spelling it is <b>'connect'</b> not 'Connect' because it is a function and not a component.)  
+`import { connect } from "react-redux";`
+
+Once connect imported on your file then wrap your component with the connect function.The connect function can take two arguments. 
+
+
+    import React, {Component} from "react";
+    import { connect } from "react-redux";
+	
+	class MyClassComponent extends Component{
+	... ... ...
+	... ... ...
+	}
+	export default connect()(MyClassComponent);
+
+<b>Redux flow</b>  
+1. A react <b>component</b> dispatching an <b>action</b><br/>  
+2. The dispatched-<b>action</b> gets to the <b>store</b>, which then passes it to the <b>reducer</b><br/>
+3. depending on the type of dispatched-<b>action</b>, the reducer will update the <b>state</b> and pass the <b>new state</b> to the store.<br/>
+4. the <b>store</b> will then pass the <b>new state</b> received from the <b>reducer</b> to the <b>component</b>.<br/>
+ 
+
+
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists
 ## Available Scripts
 
 In the project directory, you can run:
