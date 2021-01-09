@@ -53,7 +53,7 @@ Then, We have action creators, which are functions that create actions. An examp
                                         payload: text
                                     })
 									
-This action is going to receive some 'text' and pass that information as a payload to the reducer. <br/><br/>
+This action is going to receive some <i>text</i> and pass that information as a payload to the reducer. <br/><br/>
 On the other hand, <b>Reducers</b> specify how the application’s state changes in response to actions sent to the store.
 
 
