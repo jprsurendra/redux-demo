@@ -40,14 +40,13 @@ Once connect imported on your file then wrap your component with the connect fun
   &nbsp;&nbsp;&nbsp;&nbsp;... are payloads of information that send data from your application to your <b>store</b>. <br/> 
   &nbsp;&nbsp;&nbsp;&nbsp;... are plain JavaScript objects. <br/> 
   &nbsp;&nbsp;&nbsp;&nbsp;... must have a <b>type</b> property that indicates the <i>type of action</i> being performed.<br/>  
-Types should typically be defined as string constants and written in all caps.   
-Below is an example of an action that represents adding a reminder:<br/>
+Types should typically be defined as string constants and written in all caps. Below is an example of an action that represents adding a reminder:<br/>
 
  	const ADD_REMINDER = ‘ADD_REMINDER’
 	{ type: ADD_REMINDER, text: "Work on redux blog!"}
 	
-	We then have action creators, which are functions that create actions. An example can be seen below.
-	File: actions.js
+We then have action creators, which are functions that create actions. An example can be seen below.  
+	<i>File: actions.js</i>
 	const addReminder = (text) => ({
                 type: "ADD_REMINDER",
                 payload: text
