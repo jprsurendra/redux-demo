@@ -20,7 +20,6 @@ Import a function called connect from this package: (Please check spelling it is
 
 Once connect imported on your file then wrap your component with the connect function.The connect function can take two arguments. 
 
-
     import React, {Component} from "react";
     import { connect } from "react-redux";
 	
@@ -29,6 +28,7 @@ Once connect imported on your file then wrap your component with the connect fun
 	... ... ...
 	}
 	export default connect()(MyClassComponent);
+
 ### Interacting with the redux store  
 <b>Redux flow</b>  
 1. A react <b>component</b> dispatching an <b>action</b><br/>  
@@ -78,7 +78,9 @@ In our <b>reducer</b> (reducer.js file) above we declared a constant and set it 
 Next we have our reducer function called reminderReducer that will receive two very important arguments. The first is the state, which we will set equal to the constant initialState. The second argument is the action that it’s receiving from the store. Depending on the type of action the reducer receives it will change the state according to the code in the switch statement.<br/>
 
 
-#### JavaScript spread operator: 
+#### JavaScript spread operator (...): 
+(...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+
     function sum(x, y, z) {
       return x + y + z;
     }
