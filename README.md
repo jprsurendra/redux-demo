@@ -95,7 +95,20 @@ Next we have our reducer function called reminderReducer that will receive two v
 
 
 
-
+##axios  
+Promise based HTTP client for the browser and node.js  
+`npm install axios`  
+<b>Features</b>
+<ul>
+<li>Make XMLHttpRequests from the browser</li>
+<li>Make http requests from node.js</li>
+<li>Supports the Promise API</li>
+<li>Intercept request and response</li>
+<li>Transform request and response data</li>
+<li>Cancel requests</li>
+<li>Automatic transforms for JSON data</li>
+<li>Client side support for protecting against XSRF</li>
+</ul>
 
 
 
